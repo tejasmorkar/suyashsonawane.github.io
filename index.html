@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <!-- NAV COMPONENTS STARTS -->
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper" id="navbar">
+                <a href="/" class="brand-logo left-align" id="logo">S.</a>
+                <a href="#" data-target="mobile-demo" id="ham-menu" class="sidenav-trigger"><i
+                        class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down valign-wrapper" id="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <ul class="sidenav" id="mobile-demo">
+        <!-- <li><a href="sass.html">Home</a></li>
+        <li><a href="badges.html">About Me</a></li>
+        <li><a href="collapsible.html">Project</a></li>
+        <li><a href="mobile.html">Contact Me</a></li> -->
+        <div class="container" id="mobile-menu-items">
+            <button class="slide-1 sidenav-close" onclick="scrollto('home')">&nbsp;</button>
+            <button class="slide-2 sidenav-close" onclick="scrollto('about')">&nbsp;</button>
+            <button class="slide-3 sidenav-close" onclick="scrollto('projects')">&nbsp;</button>
+            <button class="slide-4 sidenav-close" onclick="scrollto('contact')">&nbsp;</button>
+            <!-- <button class="slide-5 sidenav-close" onclick="toHome()">&nbsp;</button> -->
+        </div>
+
+    </ul>
+    <!-- NAV COMPONENTS ENDS -->
+
+    <!-- LANDING PAGE COMPONENTS -->
+
+    <div class="page landing" id="home">
+        <div class="intro-text">
+            <div class="typed"></div>
+        </div>
+        <!-- <div class="small-text">
+            Alogrithm( noun. ) : <br>
+            The word used by programmes when they don't want to explain some stuff.
+        </div> -->
+        <div class="img-div">
+            <img src="/images/undraw_code_thinking_1jeh.svg" id="my_image" width="100%" alt="">
+        </div>
+    </div>
+
+    <!-- LANDING COMPONENT ENDS -->
+    <div class="page about-me" id="about">
+        <div class="about-title " data-aos-offset="310" data-aos="fade-right">
+            ABOUT ME
+        </div>
+        <div class="about-content card " data-aos-offset="380" data-aos="fade-up">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis dolorem esse cumque eos tempora amet
+            beatae, repudiandae maxime veniam repellat iusto aliquid praesentium enim ullam ipsam voluptate maiores
+            cupiditate recusandae?
+        </div>
+    </div>
+    <div class="page projects" id="projects">
+        <div class="projects-title" data-aos-offset="110" data-aos="fade-right">
+            PROJECTS
+        </div>
+        <div class="projects-content container" data-aos-offset="200" data-aos="fade-up">
+            <!-- coding hub -->
+            <div class="project card valign-wrapper">
+                <a href="https://codinghub-92abe.web.app/login" target="_blank" title="Coding Hub">
+                    <div class="card project-item" data-tilt data-tilt-glare="true" data-tilt-transition="true">
+
+                    </div>
+                </a>
+                <div class="project-info">
+
+                    <p class="project-title">
+                        Coding Hub
+                    </p>
+                    <p class="project-short-desc">
+                        A place where Developers chat with others in their vicinity based on their location.
+                    </p>
+                    <div class="chip">HTML5</div>
+                    <div class="chip">CSS3</div>
+                    <div class="chip">JS</div>
+                    <div class="chip">VUE.JS</div>
+                    <div class="chip">FIREBASE</div>
+
+                    <p class="project-link">
+                        <a href="https://github.com/SuyashSonawane/coding-hub" target="_blank">Coding Hub <i
+                                class="fa fa-github" aria-hidden="true"></i> </a>
+                    </p>
+                </div>
+            </div>
+            <!-- neural-network -->
+            <div class="project card valign-wrapper">
+                <a href="https://suyashsonawane.github.io/myneuralnet/" target="_blank" title="Neural Network">
+                    <div class="card project-item" id="nn" data-tilt data-tilt-glare="true" data-tilt-transition="true">
+                    </div>
+                </a>
+                <div class="project-info">
+
+                    <p class="project-title">
+                        Neural Network
+                    </p>
+                    <p class="project-short-desc">
+                        A Neural Network made in Tensorflow JS ,a machine learning library for Javascript.
+                        It helps to demonstrates the effect of changing hyper parameters, on the network.
+                    </p>
+                    <div class="chip">HTML5</div>
+                    <div class="chip">CSS3</div>
+                    <div class="chip">JS</div>
+                    <div class="chip">Tensorflow.JS</div>
+
+                    <p class="project-link">
+                        <a href="https://github.com/SuyashSonawane/myneuralnet" target="_blank">Neural Network <i
+                                class="fa fa-github" aria-hidden="true"></i></a>
+                    </p>
+                </div>
+            </div>
+            <!-- spectrum -->
+            <div class="project card valign-wrapper">
+                <a href="https://pccoespectrum.co.in/" target="_blank" title="Spectrum 2019">
+                    <div class="card project-item" id="spectrum" data-tilt data-tilt-glare="true"
+                        data-tilt-transition="true">
+                    </div>
+                </a>
+                <div class="project-info">
+
+                    <p class="project-title">
+                        SPECTRURM 2019
+                    </p>
+                    <p class="project-short-desc">
+                        Website for PCET’s Pimpri Chinchwad College of Engineering Pune Event SPECTRUM 2019 held at
+                        State Level.
+                    </p>
+                    <div class="chip">HTML5</div>
+                    <div class="chip">CSS3</div>
+                    <div class="chip">JS</div>
+                    <div class="chip">Various libraries</div>
+
+                    <p class="project-link">
+                        <a href="https://github.com/pcetspccoe/pccoespectrum.github.io" target="_blank">Spectrum 2019 <i
+                                class="fa fa-github" aria-hidden="true"></i></a>
+                    </p>
+                </div>
+            </div>
+            <!-- C# Ai -->
+            <div class="project card valign-wrapper">
+                <div class="card project-item" id="ai" data-tilt data-tilt-glare="true" data-tilt-transition="true"
+                    title="AI"></div>
+                <div class="project-info">
+
+                    <p class="project-title">
+                        AI in C#
+                    </p>
+                    <p class="project-short-desc">
+                        A simple voice recognition software built with .Net framework using C# language.
+                        It can perform various tasks such as text-reader, music player , browse web , HTML scraping ,
+                        telling jokes , adding commands to database
+                    </p>
+                    <div class="chip">.Net</div>
+                    <div class="chip">C#</div>
+                    <div class="chip">Sapi</div>
+
+                    <p class="project-link">
+                        <a href="https://github.com/SuyashSonawane/ai_in_csharp" target="_blank">AI <i
+                                class="fa fa-github" aria-hidden="true"></i></a>
+                    </p>
+                </div>
+            </div>
+
+            <!-- geo devs -->
+            <div class="project card valign-wrapper">
+                <a href="https://geo-devs-b3076.firebaseapp.com/" target="_blank" title="Geo Devs">
+                    <div class="card project-item" id="geo-devs" data-tilt data-tilt-glare="true"
+                        data-tilt-transition="true">
+                    </div>
+                </a>
+                <div class="project-info">
+
+                    <p class="project-title">
+                        Geo Devs
+                    </p>
+                    <p class="project-short-desc">
+                        A Global chatting web app for everyone
+                    </p>
+                    <div class="chip">HTML5</div>
+                    <div class="chip">CSS3</div>
+                    <div class="chip">JS</div>
+                    <div class="chip">VUE.JS</div>
+                    <div class="chip">FIREBASE</div>
+
+                    <p class="project-link">
+                        <a href="https://github.com/SuyashSonawane/Geo-Dev" target="_blank">Geo Devs <i
+                                class="fa fa-github" aria-hidden="true"></i></a>
+                    </p>
+                </div>
+            </div>
+            <!-- ninja smoothies -->
+            <div class="project card valign-wrapper">
+                <a href="https://suyashsonawane.github.io/Ninja-Smoothies" target="_blank" title="Ninja Smoothies">
+                    <div class="card project-item" id="ninja-smoothies" data-tilt data-tilt-glare="true"
+                        data-tilt-transition="true">
+                    </div>
+                </a>
+                <div class="project-info">
+
+                    <p class="project-title">
+                        Ninja Smoothies
+                    </p>
+                    <p class="project-short-desc">
+                        A CURD smoothie recipe webapp where any-one can add their smoothie recipe for the community
+                    </p>
+                    <div class="chip">HTML5</div>
+                    <div class="chip">CSS3</div>
+                    <div class="chip">JS</div>
+                    <div class="chip">VUE.JS</div>
+                    <div class="chip">FIREBASE</div>
+
+                    <p class="project-link">
+                        <a href="https://github.com/SuyashSonawane/Ninja-Smoothies" target="_blank">Ninja Smoothies <i
+                                class="fa fa-github" aria-hidden="true"></i></a>
+                    </p>
+                </div>
+            </div>
+            <!-- sentimental analysis -->
+            <div class="project card valign-wrapper">
+                <a href="https://sentimentalapi.herokuapp.com/" target="_blank" title="Sentimental Analysis">
+                    <div class="card project-item" id="sentiment-api" data-tilt data-tilt-glare="true"
+                        data-tilt-transition="true">
+                    </div>
+                </a>
+                <div class="project-info">
+
+                    <p class="project-title">
+                        Sentimental Analysis
+                    </p>
+                    <p class="project-short-desc">
+                        A webapp that can be also be used as an rest api for sentimental analysis of sentences.
+                        It can detect the nature of sentence
+                    </p>
+                    <div class="chip">HTML5</div>
+                    <div class="chip">CSS3</div>
+                    <div class="chip">JS</div>
+                    <div class="chip">PYTHON</div>
+                    <div class="chip">FLASK</div>
+                    <div class="chip">HEROKU</div>
+
+                    <p class="project-link">
+                        <a href="https://github.com/SuyashSonawane/sentimental_analysis-api" target="_blank">Sentimental
+                            Analysis <i class="fa fa-github" aria-hidden="true"></i></a>
+                    </p>
+                </div>
+            </div>
+            <div class="projects-more center">
+                View all projects <a href="#">Here</a>.
+            </div>
+
+
+        </div>
+
+    </div>
+    <!-- Contact component -->
+    <div class="page contact" id="contact">
+        <!-- <div class="bg-text">
+            Contact Me
+        </div> -->
+        <div class="contact-text center">
+            <!-- <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam nulla iure repellat eaque quod nihil
+                ea officiis sint minima accusantium veritatis voluptate possimus, error rerum beatae ipsum maiores
+                perspiciatis ipsa!
+            </p> -->
+            <img src="../images/contact.svg" width="100%" height="100%" alt="">
+        </div>
+        <div class="contact-form">
+            <div class="card outer_form">
+                <div class="holder" v-if="is_submitted">
+                    <div class="loader" v-if="is_submitting">
+                        <div class="preloader-wrapper active">
+                            <div class="spinner-layer spinner-red-only">
+                                <div class="circle-clipper left">
+                                    <div class="circle"></div>
+                                </div>
+                                <div class="gap-patch">
+                                    <div class="circle"></div>
+                                </div>
+                                <div class="circle-clipper right">
+                                    <div class="circle"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="center" v-else>Thanks for connecting 😉 </p>
+                </div>
+                <form v-on:submit.prevent="onSubmit" class="center" id="the-form" v-else>
+                    <!-- <label for="name" class='left'>Name</label> -->
+                    <input class="input-fields" type="text" title="name" placeholder="Enter your name" required
+                        v-model="name">
+                    <!-- <label for="name" class='left'>Email</label> -->
+                    <input class="input-fields" type="email" title="email" placeholder="Enter your Email" required
+                        v-model="email">
+                    <!-- <label for="name" class='left'>Message</label> -->
+                    <input class="input-fields" type="text" title="message" placeholder="Enter your Meassage" required
+                        v-model="message">
+                    <button class="submit centered">Submit</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+    <!-- <script src="js/rellax.min.js"></script> -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
